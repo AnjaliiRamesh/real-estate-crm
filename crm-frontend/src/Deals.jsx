@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Navbar from './Navbar'
 
-const API    = 'http://localhost:3000'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 const STAGES = ['Negotiation', 'Agreement', 'Closed']
 
 function formatPrice(amount) {

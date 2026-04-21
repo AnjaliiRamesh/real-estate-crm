@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 // import Navbar from "app.jsx"
 
-const API = 'http://localhost:3000'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
 
 function formatPrice(amount) {
